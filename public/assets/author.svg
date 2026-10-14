@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <defs>
+    <!-- Background Warm Editorial Parchment Gradient -->
+    <radialGradient id="authorParchment" cx="50%" cy="38%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="1"/>
+      <stop offset="40%" stop-color="#F7F1E7" stop-opacity="1"/>
+      <stop offset="85%" stop-color="#EBE3D5" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#DECFC0" stop-opacity="1"/>
+    </radialGradient>
+
+    <linearGradient id="authorGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C5A059"/>
+      <stop offset="50%" stop-color="#DFBE77"/>
+      <stop offset="100%" stop-color="#9A7736"/>
+    </linearGradient>
+
+    <radialGradient id="warmHalo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8F221E" stop-opacity="0.12"/>
+      <stop offset="60%" stop-color="#C5A059" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#C5A059" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="800" height="1000" fill="#FAF7F2"/>
+  <rect width="800" height="1000" fill="url(#authorParchment)"/>
+  
+  <!-- Subtle warm spiritual halo -->
+  <circle cx="400" cy="380" r="320" fill="url(#warmHalo)"/>
+
+  <!-- Ornate Editorial Frame -->
+  <rect x="36" y="36" width="728" height="928" rx="8" fill="none" stroke="url(#authorGold)" stroke-width="2" opacity="0.75"/>
+  <rect x="46" y="46" width="708" height="908" rx="4" fill="none" stroke="url(#authorGold)" stroke-width="0.8" opacity="0.45"/>
+
+  <!-- Corner accents -->
+  <g fill="url(#authorGold)" opacity="0.85">
+    <rect x="34" y="34" width="8" height="8"/>
+    <rect x="758" y="34" width="8" height="8"/>
+    <rect x="34" y="958" width="8" height="8"/>
+    <rect x="758" y="958" width="8" height="8"/>
+  </g>
+
+  <!-- Central Editorial Author Silhouette & Portrait Composition -->
+  <g id="author-portrait" transform="translate(400, 360)">
+    <!-- Backlit Medallion Halo -->
+    <ellipse cx="0" cy="0" rx="180" ry="200" fill="#F4EFE6" stroke="url(#authorGold)" stroke-width="1.8"/>
+    <ellipse cx="0" cy="0" rx="168" ry="188" fill="none" stroke="url(#authorGold)" stroke-width="0.75" stroke-dasharray="3,6" opacity="0.6"/>
+
+    <!-- Dignified Author Silhouette (Shoulders and Head) -->
+    <g opacity="0.92">
+      <path d="M 0 -130 
+               C 45 -130 75 -95 75 -45 
+               C 75 -5 65 30 70 70 
+               C 85 90 140 120 160 170 
+               C 165 185 150 195 130 195 
+               L -130 195 
+               C -150 195 -165 185 -160 170 
+               C -140 120 -85 90 -70 70 
+               C -65 30 -75 -5 -75 -45 
+               C -75 -95 -45 -130 0 -130 Z" 
+            fill="#2A2420" stroke="url(#authorGold)" stroke-width="1.5"/>
+
+      <!-- Inner warm lighting / collar lines -->
+      <path d="M -45 80 L 0 145 L 45 80" fill="none" stroke="url(#authorGold)" stroke-width="1.2" opacity="0.7"/>
+      <line x1="0" y1="145" x2="0" y2="195" stroke="url(#authorGold)" stroke-width="1.2" opacity="0.6"/>
+    </g>
+
+    <!-- Monogram Medallion "AJ" -->
+    <circle cx="0" cy="-20" r="48" fill="#FAF7F2" stroke="url(#authorGold)" stroke-width="2"/>
+    <circle cx="0" cy="-20" r="42" fill="none" stroke="url(#authorGold)" stroke-width="0.75" stroke-dasharray="2,4" opacity="0.7"/>
+    <text x="0" y="-3" text-anchor="middle" font-family="'Cormorant Garamond', 'Georgia', serif" font-size="44" font-weight="700" fill="#8F221E" letter-spacing="4">
+      AJ
+    </text>
+  </g>
+
+  <!-- Editorial Plaque & Information -->
+  <g transform="translate(400, 680)">
+    <!-- Small Decorative Gold Trishul / Quill Accent -->
+    <line x1="-80" y1="0" x2="80" y2="0" stroke="url(#authorGold)" stroke-width="1.5" opacity="0.8"/>
+    <polygon points="0,-6 6,0 0,6 -6,0" fill="#8F221E"/>
+
+    <text x="0" y="45" text-anchor="middle" font-family="'Cinzel', 'Cormorant Garamond', 'Georgia', serif" font-size="14" font-weight="600" fill="#8F221E" letter-spacing="6" opacity="0.95">
+      AUTHOR • WRITER
+    </text>
+
+    <!-- Author Full Name -->
+    <text x="0" y="105" text-anchor="middle" font-family="'Cormorant Garamond', 'Playfair Display', 'Georgia', serif" font-size="46" font-weight="700" fill="#1C1917" letter-spacing="8">
+      ASHUTOSH JHA
+    </text>
+
+    <!-- Book Title Reference -->
+    <text x="0" y="145" text-anchor="middle" font-family="'Cormorant Garamond', 'Georgia', serif" font-style="italic" font-size="21" fill="#7A684C" letter-spacing="2">
+      Author of “Ma Beyond the Battle”
+    </text>
+
+    <!-- Editorial note -->
+    <text x="0" y="195" text-anchor="middle" font-family="'Inter', sans-serif" font-size="11" font-weight="500" fill="#7A7269" letter-spacing="3" opacity="0.9">
+      EXPLORING DEVOTION • COURAGE • INNER STRENGTH
+    </text>
+  </g>
+</svg>

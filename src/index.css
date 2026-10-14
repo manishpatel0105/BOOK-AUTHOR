@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-logo: 'Cinzel', serif;
+  --font-heading: 'Cinzel', 'Playfair Display', serif;
+  --font-serif: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --font-script: 'Cormorant Garamond', 'Playfair Display', serif;
+}
+
+:root {
+  --bg-black: #000000;
+  --bg-dark-card: #0B0B0E;
+  --bg-dark-hover: #141318;
+  
+  --red-accent: #DC2626;
+  --red-crimson: #991B1B;
+  --red-glow: rgba(220, 38, 38, 0.2);
+  
+  --text-white: #FFFFFF;
+  --text-silver: #E2E8F0;
+  --text-muted: #94A3B8;
+  --text-dim: #64748B;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: #000000;
+  color: #FFFFFF;
+  overflow-x: hidden;
+  line-height: 1.65;
+}
+
+/* Author Logo Font — Stately, Literary, Timeless */
+.font-logo {
+  font-family: 'Cinzel', serif !important;
+  letter-spacing: 0.22em;
+}
+
+.font-heading {
+  font-family: 'Cinzel', 'Playfair Display', serif !important;
+}
+
+.font-serif {
+  font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif !important;
+}
+
+.font-sans {
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+}
+
+.font-script {
+  font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif !important;
+}
+
+/* Refined Literary Buttons */
+.btn-author-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1.85rem;
+  background: transparent;
+  color: #FFFFFF;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 2px;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-author-outline:hover {
+  background: #FFFFFF;
+  color: #000000;
+  border-color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.15);
+}
+
+.btn-author-solid-red {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1.85rem;
+  background: #B91C1C;
+  color: #FFFFFF;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  border: 1px solid #DC2626;
+  border-radius: 2px;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(185, 28, 28, 0.35);
+}
+
+.btn-author-solid-red:hover {
+  background: #DC2626;
+  border-color: #EF4444;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(220, 38, 38, 0.5);
+}
+
+/* Sharp Book Presentation Shadow */
+.book-hero-shadow {
+  box-shadow: 
+    0 25px 60px -12px rgba(0, 0, 0, 0.95),
+    0 0 40px rgba(185, 28, 28, 0.2),
+    -10px 10px 30px rgba(0, 0, 0, 0.8);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-hero-shadow:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 
+    0 35px 80px -15px rgba(0, 0, 0, 0.98),
+    0 0 60px rgba(220, 38, 38, 0.3),
+    -12px 15px 40px rgba(0, 0, 0, 0.85);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272A;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #DC2626;
+}
+
+::selection {
+  background-color: #991B1B;
+  color: #FFFFFF;
+}
